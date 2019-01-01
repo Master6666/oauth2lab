@@ -15,11 +15,9 @@ public class UserController {
         User user = (User) SecurityContextHolder.getContext()
                 .getAuthentication().getPrincipal();
         String email = user.getUsername() + "@spring2go.com";
-
         UserInfo userInfo = new UserInfo();
         userInfo.setName(user.getUsername());
         userInfo.setEmail(email);
-
         return ResponseEntity.ok(userInfo);
     }
 

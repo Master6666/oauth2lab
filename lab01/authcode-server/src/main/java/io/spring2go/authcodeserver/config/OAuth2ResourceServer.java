@@ -17,7 +17,7 @@ public class OAuth2ResourceServer extends ResourceServerConfigurerAdapter {
             .authenticated()
         .and()
             .requestMatchers()
-            .antMatchers("/api/**");
+            .antMatchers("/api/**");//对那些断点配置需要otha2
     }
 
 }

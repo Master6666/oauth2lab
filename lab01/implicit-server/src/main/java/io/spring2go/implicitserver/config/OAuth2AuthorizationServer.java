@@ -20,7 +20,7 @@ public class OAuth2AuthorizationServer extends
             .redirectUris("http://localhost:9001/callback")
             // 简化模式
             .authorizedGrantTypes("implicit")
-            .accessTokenValiditySeconds(120)
+            .accessTokenValiditySeconds(120)//访问令牌时间
             .scopes("read_userinfo", "read_contacts");
     }
 
